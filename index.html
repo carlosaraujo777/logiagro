@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiAgro | O Frete da Sua Safra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🌱 LogiAgro</div>
+        <p>Conectando a safra do produtor ao caminhoneiro certo.</p>
+    </header>
+
+    <main>
+        <!-- Abas de Navegação -->
+        <div class="abas">
+            <button class="aba-btn ativa" onclick="mudarAba('produtor', this)">Sou Produtor</button>
+            <button class="aba-btn" onclick="mudarAba('caminhoneiro', this)">Sou Caminhoneiro</button>
+        </div>
+
+        <!-- Tela do Produtor -->
+        <section id="tela-produtor" class="tela ativa">
+            <h2>Cadastrar Nova Carga</h2>
+            <form id="form-carga">
+                <div class="input-group">
+                    <label>O que você está enviando?</label>
+                    <input type="text" id="produto" placeholder="Ex: Soja, Milho, Café" required>
+                </div>
+                <div class="input-group">
+                    <label>Origem (Cidade/Estado):</label>
+                    <input type="text" id="origem" placeholder="Ex: Sorriso - MT" required>
+                </div>
+                <div class="input-group">
+                    <label>Destino (Cidade/Estado):</label>
+                    <input type="text" id="destino" placeholder="Ex: Porto de Santos - SP" required>
+                </div>
+                <div class="input-group">
+                    <label>Peso da Carga (Toneladas):</label>
+                    <input type="number" id="peso" placeholder="Ex: 30" required>
+                </div>
+                <button type="submit" class="btn-principal">Publicar Carga</button>
+            </form>
+            <div id="msg-sucesso" class="mensagem"></div>
+        </section>
+
+        <!-- Tela do Caminhoneiro -->
+        <section id="tela-caminhoneiro" class="tela">
+            <h2>Fretes Disponíveis</h2>
+            <div id="lista-cargas" class="grid-cargas">
+                <!-- O JavaScript vai preencher isso aqui -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

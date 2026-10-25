@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f0;
+    color: #333;
+}
+
+header {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.abas {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.aba-btn {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #1b4332;
+    background: transparent;
+    color: #1b4332;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.aba-btn.ativa {
+    background-color: #1b4332;
+    color: white;
+}
+
+.tela {
+    display: none;
+}
+
+.tela.ativa {
+    display: block;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1b4332;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #e68a00;
+}
+
+.grid-cargas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.card-carga {
+    background: white;
+    padding: 20px;
+    border-left: 6px solid #ff9800;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card-carga h3 {
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+.card-carga p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.btn-aceitar {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-aceitar:hover {
+    background-color: #1b4332;
+}
+
+.mensagem {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #d8f3dc;
+    color: #1b4332;
+    border-radius: 6px;
+    font-weight: bold;
+    display: none;
+}
